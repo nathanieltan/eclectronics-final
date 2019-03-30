@@ -6,10 +6,4 @@ K cap capacitor
 F ~
 $ENDCMP
 #
-$CMP R
-D Resistor
-K R res resistor
-F ~
-$ENDCMP
-#
 #End Doc Library
