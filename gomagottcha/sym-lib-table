@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name toma-sym)(type Legacy)(uri C:/Users/ntan/Documents/eclectronics-final/gomagottcha/toma-sym.lib)(options "")(descr ""))
+  (lib (name toma-sym-j)(type Legacy)(uri "C:/Users/jryan/Documents/Junior Year/Eclectronics/eclectronics-final/gomagottcha/toma-sym-j.lib")(options "")(descr ""))
 )
