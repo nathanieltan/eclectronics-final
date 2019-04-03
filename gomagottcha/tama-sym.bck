@@ -17,4 +17,16 @@ D 1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol
 K dip switch
 $ENDCMP
 #
+$CMP USB_B_Micro
+D USB Micro Type B connector
+K connector USB micro
+F ~
+$ENDCMP
+#
+$CMP USB_B_Mini
+D USB Mini Type B connector
+K connector USB mini
+F ~
+$ENDCMP
+#
 #End Doc Library
