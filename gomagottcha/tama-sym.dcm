@@ -6,6 +6,18 @@ K cap capacitor
 F ~
 $ENDCMP
 #
+$CMP Crystal
+D ceramic resonator
+K ceramic resonator built in capacitor
+F ~
+$ENDCMP
+#
+$CMP LED_ALT
+D Light emitting diode, filled shape
+K LED diode
+F ~
+$ENDCMP
+#
 $CMP R
 D Resistor
 K R res resistor
