@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_Battery_Cell
+# Device:Battery_Cell
 #
-DEF Device_Battery_Cell BT 0 0 N N 1 F N
+DEF Device:Battery_Cell BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "Device_Battery_Cell" 100 0 50 H V L CNN
+F1 "Device:Battery_Cell" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -20,11 +20,11 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# Device:R
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF Device:R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "Device:R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -37,11 +37,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power_+3.3V
+# power:+3.3V
 #
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+DEF power:+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
+F1 "power:+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -53,11 +53,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_GND
+# power:GND
 #
-DEF power_GND #PWR 0 0 Y Y 1 F P
+DEF power:GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -66,11 +66,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# tama-sym_ATMEGA1284P
+# tama-sym:ATMEGA1284P
 #
-DEF tama-sym_ATMEGA1284P U 0 40 Y Y 1 F N
+DEF tama-sym:ATMEGA1284P U 0 40 Y Y 1 F N
 F0 "U" -800 -550 50 H V C CNN
-F1 "tama-sym_ATMEGA1284P" -850 -350 50 H V C CNN
+F1 "tama-sym:ATMEGA1284P" -850 -350 50 H V C CNN
 F2 "" -800 -550 50 H I C CNN
 F3 "" -800 -550 50 H I C CNN
 DRAW
@@ -118,11 +118,11 @@ X ~RESET 9 -600 1350 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# tama-sym_Arduino_ICSP
+# tama-sym:Arduino_ICSP
 #
-DEF tama-sym_Arduino_ICSP J 0 40 Y Y 1 F N
+DEF tama-sym:Arduino_ICSP J 0 40 Y Y 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "tama-sym_Arduino_ICSP" 0 -200 50 H V C CNN
+F1 "tama-sym:Arduino_ICSP" 0 -200 50 H V C CNN
 F2 "" 0 100 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
 DRAW
@@ -148,11 +148,26 @@ X ~ 6 200 -100 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# tama-sym_C
+# tama-sym:Buzzer_490-9647-1-ND
 #
-DEF tama-sym_C C 0 10 N Y 1 F N
+DEF tama-sym:Buzzer_490-9647-1-ND U 0 40 Y Y 1 F N
+F0 "U" 0 -50 50 H V C CNN
+F1 "tama-sym:Buzzer_490-9647-1-ND" 0 -50 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+T 0 0 250 50 0 0 0 Buzzer Normal 0 C C
+S -200 450 200 50 0 0 0 N
+X V+ 1 -300 350 100 R 50 50 1 1 I
+X V- 2 -300 150 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# tama-sym:C
+#
+DEF tama-sym:C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "tama-sym_C" 25 -100 50 H V L CNN
+F1 "tama-sym:C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -166,11 +181,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# tama-sym_Crystal
+# tama-sym:Crystal
 #
-DEF tama-sym_Crystal Y 0 40 N N 1 F N
+DEF tama-sym:Crystal Y 0 40 N N 1 F N
 F0 "Y" 0 300 50 H V C CNN
-F1 "tama-sym_Crystal" 0 200 50 H V C CNN
+F1 "tama-sym:Crystal" 0 200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -197,11 +212,11 @@ X 3 3 200 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# tama-sym_FT232RQ
+# tama-sym:FT232RQ
 #
-DEF tama-sym_FT232RQ U 0 40 Y Y 1 F N
+DEF tama-sym:FT232RQ U 0 40 Y Y 1 F N
 F0 "U" 0 1550 50 H V C CNN
-F1 "tama-sym_FT232RQ" 0 1450 50 H V C CNN
+F1 "tama-sym:FT232RQ" 0 1450 50 H V C CNN
 F2 "" 0 950 50 H I C CNN
 F3 "" 0 950 50 H I C CNN
 DRAW
@@ -242,11 +257,11 @@ X CBUS4 9 1100 -1300 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# tama-sym_IMU
+# tama-sym:IMU
 #
-DEF tama-sym_IMU U 0 40 Y Y 1 F N
+DEF tama-sym:IMU U 0 40 Y Y 1 F N
 F0 "U" 50 -50 50 H V C CNN
-F1 "tama-sym_IMU" 100 650 50 H V C CNN
+F1 "tama-sym:IMU" 100 650 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -266,11 +281,11 @@ X Vdd 9 1150 250 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# tama-sym_LCD_Tomagotcha
+# tama-sym:LCD_Tomagotcha
 #
-DEF tama-sym_LCD_Tomagotcha U 0 40 Y Y 1 F N
+DEF tama-sym:LCD_Tomagotcha U 0 40 Y Y 1 F N
 F0 "U" -50 -50 50 H V C CNN
-F1 "tama-sym_LCD_Tomagotcha" 0 50 50 H V C CNN
+F1 "tama-sym:LCD_Tomagotcha" 0 50 50 H V C CNN
 F2 "" -50 -50 50 H I C CNN
 F3 "" -50 -50 50 H I C CNN
 DRAW
@@ -307,11 +322,11 @@ X DB3 9 450 750 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# tama-sym_LED_ALT
+# tama-sym:LED_ALT
 #
-DEF tama-sym_LED_ALT D 0 40 N N 1 F N
+DEF tama-sym:LED_ALT D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "tama-sym_LED_ALT" 0 -100 50 H V C CNN
+F1 "tama-sym:LED_ALT" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -330,11 +345,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# tama-sym_MCP1700
+# tama-sym:MCP1700
 #
-DEF tama-sym_MCP1700 U 0 40 Y Y 1 F N
+DEF tama-sym:MCP1700 U 0 40 Y Y 1 F N
 F0 "U" 200 200 50 H V C CNN
-F1 "tama-sym_MCP1700" -100 200 50 H V C CNN
+F1 "tama-sym:MCP1700" -100 200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -345,11 +360,11 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# tama-sym_MCP7381
+# tama-sym:MCP7381
 #
-DEF tama-sym_MCP7381 U 0 40 Y Y 1 F N
+DEF tama-sym:MCP7381 U 0 40 Y Y 1 F N
 F0 "U" -300 500 50 H V C CNN
-F1 "tama-sym_MCP7381" -300 400 50 H V C CNN
+F1 "tama-sym:MCP7381" -300 400 50 H V C CNN
 F2 "" -300 500 50 H I C CNN
 F3 "" -300 500 50 H I C CNN
 DRAW
@@ -362,11 +377,11 @@ X PROG 5 -400 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# tama-sym_MOSNP
+# tama-sym:MOSNP
 #
-DEF tama-sym_MOSNP U 0 40 Y Y 2 L N
+DEF tama-sym:MOSNP U 0 40 Y Y 2 L N
 F0 "U" -400 200 50 H V C CNN
-F1 "tama-sym_MOSNP" -350 300 50 H V C CNN
+F1 "tama-sym:MOSNP" -350 300 50 H V C CNN
 F2 "" -50 0 50 H I C CNN
 F3 "" -50 0 50 H I C CNN
 DRAW
@@ -415,11 +430,11 @@ X G 5 -300 0 100 R 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
-# tama-sym_SW_DIP_x01
+# tama-sym:SW_DIP_x01
 #
-DEF tama-sym_SW_DIP_x01 SW 0 0 Y N 1 F N
+DEF tama-sym:SW_DIP_x01 SW 0 0 Y N 1 F N
 F0 "SW" 0 150 50 H V C CNN
-F1 "tama-sym_SW_DIP_x01" 0 -150 50 H V C CNN
+F1 "tama-sym:SW_DIP_x01" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -435,11 +450,11 @@ X ~ 2 300 0 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# tama-sym_SW_PUSH
+# tama-sym:SW_PUSH
 #
-DEF tama-sym_SW_PUSH S 0 40 N N 1 F N
+DEF tama-sym:SW_PUSH S 0 40 N N 1 F N
 F0 "S" 50 100 50 H V L CNN
-F1 "tama-sym_SW_PUSH" 50 -100 50 H V L CNN
+F1 "tama-sym:SW_PUSH" 50 -100 50 H V L CNN
 F2 "" 50 100 60 V I C CNN
 F3 "" 50 100 60 V I C CNN
 DRAW
@@ -453,11 +468,11 @@ X 2 2 0 150 50 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# tama-sym_TPS2113APWR
+# tama-sym:TPS2113APWR
 #
-DEF tama-sym_TPS2113APWR U 0 40 Y Y 1 F N
+DEF tama-sym:TPS2113APWR U 0 40 Y Y 1 F N
 F0 "U" 0 550 60 H V C CNN
-F1 "tama-sym_TPS2113APWR" 0 450 60 H V C CNN
+F1 "tama-sym:TPS2113APWR" 0 450 60 H V C CNN
 F2 "" 0 150 60 H I C CNN
 F3 "" 0 150 60 H I C CNN
 DRAW
@@ -473,11 +488,11 @@ X IN1 8 -600 300 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# tama-sym_USB_B_Micro
+# tama-sym:USB_B_Micro
 #
-DEF tama-sym_USB_B_Micro J 0 40 Y Y 1 F N
+DEF tama-sym:USB_B_Micro J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "tama-sym_USB_B_Micro" -200 350 50 H V L CNN
+F1 "tama-sym:USB_B_Micro" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 ALIAS USB_B_Mini
@@ -509,11 +524,11 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# tama-sym_VMotor1670-1000-ND
+# tama-sym:VMotor1670-1000-ND
 #
-DEF tama-sym_VMotor1670-1000-ND U 0 40 Y Y 1 F N
+DEF tama-sym:VMotor1670-1000-ND U 0 40 Y Y 1 F N
 F0 "U" 0 0 50 H V C CNN
-F1 "tama-sym_VMotor1670-1000-ND" 0 0 50 H V C CNN
+F1 "tama-sym:VMotor1670-1000-ND" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
