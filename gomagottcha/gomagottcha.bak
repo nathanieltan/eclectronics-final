@@ -1809,7 +1809,7 @@ U 1 1 5CAF41C6
 P 5750 2400
 F 0 "BT1" H 5868 2496 50  0000 L CNN
 F 1 "Battery_Cell" H 5868 2405 50  0000 L CNN
-F 2 "" V 5750 2460 50  0001 C CNN
+F 2 "tama-footprints:battery_holder" V 5750 2460 50  0001 C CNN
 F 3 "~" V 5750 2460 50  0001 C CNN
 	1    5750 2400
 	1    0    0    -1  
