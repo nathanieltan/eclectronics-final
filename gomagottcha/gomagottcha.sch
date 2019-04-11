@@ -2219,8 +2219,6 @@ F 3 "~" H 3600 9150 50  0001 C CNN
 	1    3600 9150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4000 8850 3750 8850
 Text Label 2750 9350 3    50   ~ 0
 RST_N
 Text Label 2850 9350 3    50   ~ 0
@@ -2289,23 +2287,8 @@ Wire Wire Line
 	11550 1350 11550 1400
 Text Notes 11750 1400 0    50   ~ 0
 Power Indicator
-$Comp
-L tama-sym:C C5
-U 1 1 5CAC3476
-P 3750 9000
-F 0 "C5" V 3800 9100 50  0000 C CNN
-F 1 "10uF" V 3900 9000 50  0000 C CNN
-F 2 "tama-footprints:C_0603_1608Metric" H 3788 8850 50  0001 C CNN
-F 3 "~" H 3750 9000 50  0001 C CNN
-	1    3750 9000
-	1    0    0    -1  
-$EndComp
-Connection ~ 3750 8850
-Wire Wire Line
-	3750 8850 3650 8850
 Wire Wire Line
 	3750 9150 4000 9150
-Connection ~ 3750 9150
 Wire Wire Line
 	3350 9050 3350 9150
 Wire Wire Line
@@ -2393,4 +2376,75 @@ F 3 "" H 2750 5950 50  0001 C CNN
 	1    2750 5000
 	1    0    0    -1  
 $EndComp
+$Comp
+L tama-sym:C C5
+U 1 1 5CAC3476
+P 4400 9000
+F 0 "C5" V 4450 9100 50  0000 C CNN
+F 1 "10uF" V 4550 9000 50  0000 C CNN
+F 2 "tama-footprints:C_0603_1608Metric" H 4438 8850 50  0001 C CNN
+F 3 "~" H 4400 9000 50  0001 C CNN
+	1    4400 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 8850 4400 8850
+Wire Wire Line
+	3650 8850 4000 8850
+Connection ~ 4000 8850
+$Comp
+L power:GND #PWR0116
+U 1 1 5CB1BD55
+P 4400 9150
+F 0 "#PWR0116" H 4400 8900 50  0001 C CNN
+F 1 "GND" H 4405 8977 50  0000 C CNN
+F 2 "" H 4400 9150 50  0001 C CNN
+F 3 "" H 4400 9150 50  0001 C CNN
+	1    4400 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5CB2121E
+P 8950 6600
+F 0 "R26" V 8743 6600 50  0000 C CNN
+F 1 "10k" V 8834 6600 50  0000 C CNN
+F 2 "tama-footprints:R_0603_1608Metric" V 8880 6600 50  0001 C CNN
+F 3 "~" H 8950 6600 50  0001 C CNN
+	1    8950 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 5CB2130E
+P 9250 6600
+F 0 "R27" V 9043 6600 50  0000 C CNN
+F 1 "10k" V 9134 6600 50  0000 C CNN
+F 2 "tama-footprints:R_0603_1608Metric" V 9180 6600 50  0001 C CNN
+F 3 "~" H 9250 6600 50  0001 C CNN
+	1    9250 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0174
+U 1 1 5CB21570
+P 9250 6400
+F 0 "#PWR0174" H 9250 6250 50  0001 C CNN
+F 1 "+3.3V" H 9265 6573 50  0000 C CNN
+F 2 "" H 9250 6400 50  0001 C CNN
+F 3 "" H 9250 6400 50  0001 C CNN
+	1    9250 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 6400 9250 6450
+Wire Wire Line
+	9250 6450 8950 6450
+Connection ~ 9250 6450
+Wire Wire Line
+	8500 6750 8950 6750
+Wire Wire Line
+	8500 6850 9250 6850
+Wire Wire Line
+	9250 6850 9250 6750
 $EndSCHEMATC
