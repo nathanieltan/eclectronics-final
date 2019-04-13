@@ -1175,16 +1175,10 @@ F 3 "" H 8500 7550 50  0001 C CNN
 	1    8500 7550
 	1    0    0    -1  
 $EndComp
-Text Label 8500 5800 0    50   ~ 0
-A6
-Text Label 8500 5900 0    50   ~ 0
-A7
 Text Label 8500 6750 0    50   ~ 0
 SDA
 Text Label 8500 6850 0    50   ~ 0
 SCL
-Text Label 8500 3700 0    50   ~ 0
-SS
 Text Label 8500 4650 0    50   ~ 0
 MOSI
 Text Label 8500 4550 0    50   ~ 0
@@ -1268,23 +1262,23 @@ $EndComp
 $Comp
 L tama-sym:C C30
 U 1 1 5CAEB3C3
-P 13050 9350
-F 0 "C30" V 12798 9350 50  0000 C CNN
-F 1 "10uF" V 12900 9350 50  0000 C CNN
-F 2 "tama-footprints:C_0603_1608Metric" H 13088 9200 50  0001 C CNN
-F 3 "~" H 13050 9350 50  0001 C CNN
-	1    13050 9350
+P 13200 9350
+F 0 "C30" V 12948 9350 50  0000 C CNN
+F 1 "10uF" V 13050 9350 50  0000 C CNN
+F 2 "tama-footprints:C_0603_1608Metric" H 13238 9200 50  0001 C CNN
+F 3 "~" H 13200 9350 50  0001 C CNN
+	1    13200 9350
 	0    1    1    0   
 $EndComp
 $Comp
 L tama-sym:C C31
 U 1 1 5CAEB45B
-P 13050 9600
-F 0 "C31" V 12798 9600 50  0000 C CNN
-F 1 "100nF" V 13200 9600 50  0000 C CNN
-F 2 "tama-footprints:C_0603_1608Metric" H 13088 9450 50  0001 C CNN
-F 3 "~" H 13050 9600 50  0001 C CNN
-	1    13050 9600
+P 13200 9600
+F 0 "C31" V 12948 9600 50  0000 C CNN
+F 1 "100nF" V 13350 9600 50  0000 C CNN
+F 2 "tama-footprints:C_0603_1608Metric" H 13238 9450 50  0001 C CNN
+F 3 "~" H 13200 9600 50  0001 C CNN
+	1    13200 9600
 	0    1    1    0   
 $EndComp
 Text Label 11250 9050 2    50   ~ 0
@@ -1339,71 +1333,55 @@ Connection ~ 10800 9550
 $Comp
 L power:GND #PWR074
 U 1 1 5CB0C516
-P 13200 9700
-F 0 "#PWR074" H 13200 9450 50  0001 C CNN
-F 1 "GND" H 13205 9527 50  0000 C CNN
-F 2 "" H 13200 9700 50  0001 C CNN
-F 3 "" H 13200 9700 50  0001 C CNN
-	1    13200 9700
+P 13350 9700
+F 0 "#PWR074" H 13350 9450 50  0001 C CNN
+F 1 "GND" H 13355 9527 50  0000 C CNN
+F 2 "" H 13350 9700 50  0001 C CNN
+F 3 "" H 13350 9700 50  0001 C CNN
+	1    13350 9700
 	1    0    0    -1  
 $EndComp
 $Comp
 L tama-sym:C C29
 U 1 1 5CB0C58F
-P 13050 9050
-F 0 "C29" V 12798 9050 50  0000 C CNN
-F 1 "100nF" V 12889 9050 50  0000 C CNN
-F 2 "tama-footprints:C_0603_1608Metric" H 13088 8900 50  0001 C CNN
-F 3 "~" H 13050 9050 50  0001 C CNN
-	1    13050 9050
+P 13200 9050
+F 0 "C29" V 12948 9050 50  0000 C CNN
+F 1 "100nF" V 13039 9050 50  0000 C CNN
+F 2 "tama-footprints:C_0603_1608Metric" H 13238 8900 50  0001 C CNN
+F 3 "~" H 13200 9050 50  0001 C CNN
+	1    13200 9050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12600 9350 12900 9350
+	13050 9350 13050 9600
+Connection ~ 13050 9350
 Wire Wire Line
-	12900 9350 12900 9600
-Connection ~ 12900 9350
+	13350 9350 13350 9600
 Wire Wire Line
-	13200 9350 13200 9600
+	13350 9600 13350 9700
+Connection ~ 13350 9600
+Connection ~ 13350 9350
 Wire Wire Line
-	13200 9600 13200 9700
-Connection ~ 13200 9600
-Wire Wire Line
-	12600 9250 12900 9250
-Connection ~ 13200 9350
-Wire Wire Line
-	12900 9250 12900 9350
-Connection ~ 12900 9250
+	13050 9250 13050 9350
+Connection ~ 13050 9250
 $Comp
 L power:+3.3V #PWR073
 U 1 1 5CB2EDD6
-P 12900 9000
-F 0 "#PWR073" H 12900 8850 50  0001 C CNN
-F 1 "+3.3V" H 12915 9173 50  0000 C CNN
-F 2 "" H 12900 9000 50  0001 C CNN
-F 3 "" H 12900 9000 50  0001 C CNN
-	1    12900 9000
+P 13050 9000
+F 0 "#PWR073" H 13050 8850 50  0001 C CNN
+F 1 "+3.3V" H 13065 9173 50  0000 C CNN
+F 2 "" H 13050 9000 50  0001 C CNN
+F 3 "" H 13050 9000 50  0001 C CNN
+	1    13050 9000
 	1    0    0    -1  
 $EndComp
-Connection ~ 12900 9050
+Connection ~ 13050 9050
 Wire Wire Line
-	12900 9050 12900 9000
+	13050 9050 13050 9000
 Wire Wire Line
-	12900 9050 12900 9250
+	13050 9050 13050 9250
 Wire Wire Line
-	13200 9050 13200 9350
-Text Label 8500 4100 0    50   ~ 0
-PB0
-Text Label 12600 9050 0    50   ~ 0
-PB0
-Text Label 8500 4000 0    50   ~ 0
-PB1
-Text Label 12600 9150 0    50   ~ 0
-PB1
-Text Label 8500 3900 0    50   ~ 0
-PB2
-Text Label 12600 9550 0    50   ~ 0
-PB2
+	13350 9050 13350 9350
 $Comp
 L power:GND #PWR072
 U 1 1 5CB38D30
@@ -1449,10 +1427,6 @@ F 3 "" H 8900 10500 50  0001 C CNN
 	1    8900 10500
 	1    0    0    -1  
 $EndComp
-Text Label 8500 3800 0    50   ~ 0
-PB3
-Text Label 8600 9400 0    50   ~ 0
-PB3
 Text Label 8600 10400 0    50   ~ 0
 MOSI
 $Comp
@@ -1501,10 +1475,6 @@ F 3 "" H 8950 8900 50  0001 C CNN
 	1    8950 8900
 	1    0    0    -1  
 $EndComp
-Text Label 8500 6450 0    50   ~ 0
-PC4
-Text Label 8600 9300 0    50   ~ 0
-PC4
 Wire Wire Line
 	8600 9300 8950 9300
 Wire Wire Line
@@ -1748,8 +1718,6 @@ F 3 "" H 11150 7200 50  0001 C CNN
 $EndComp
 Text Label 3950 2650 2    50   ~ 0
 VBAT
-Text Label 8500 5200 0    50   ~ 0
-VBAT
 Text Label 4700 2900 2    50   ~ 0
 MEAS_BAT
 Text Label 8500 6250 0    50   ~ 0
@@ -1783,7 +1751,7 @@ U 1 1 5CAF41C6
 P 5750 2400
 F 0 "BT1" H 5868 2496 50  0000 L CNN
 F 1 "Battery_Cell" H 5868 2405 50  0000 L CNN
-F 2 "tama-footprints:battery_holder" V 5750 2460 50  0001 C CNN
+F 2 "tama-footprints:PhoenixContact_MSTBVA_2,5_2-G_1x02_P5.00mm_Vertical" V 5750 2460 50  0001 C CNN
 F 3 "~" V 5750 2460 50  0001 C CNN
 	1    5750 2400
 	1    0    0    -1  
@@ -1804,7 +1772,7 @@ Wire Wire Line
 Connection ~ 5750 2050
 Wire Wire Line
 	5750 2050 6650 2050
-Text Label 5850 7150 2    50   ~ 0
+Text Label 8500 6350 0    50   ~ 0
 PWM_1
 Text Label 5850 7250 2    50   ~ 0
 PWM_2
@@ -2124,15 +2092,9 @@ Wire Wire Line
 	8500 7450 8500 7550
 Text Label 8600 9500 0    50   ~ 0
 WR
-Text Label 8500 6350 0    50   ~ 0
-WR
-Text Label 8500 6650 0    50   ~ 0
-RD
 Text Label 8600 9600 0    50   ~ 0
 RD
 Text Label 8600 9200 0    50   ~ 0
-CS1
-Text Label 8500 6550 0    50   ~ 0
 CS1
 Text Label 10750 4650 0    50   ~ 0
 Buzzer
@@ -2160,12 +2122,6 @@ BUTTON1
 Text Label 11800 3500 1    50   ~ 0
 BUTTON2
 Text Label 12650 3500 1    50   ~ 0
-BUTTON3
-Text Label 5850 7350 2    50   ~ 0
-BUTTON1
-Text Label 8500 6150 0    50   ~ 0
-BUTTON2
-Text Label 8500 5300 0    50   ~ 0
 BUTTON3
 Text Label 2550 9350 3    50   ~ 0
 BLE_TX
@@ -2227,14 +2183,6 @@ Text Label 2350 9350 3    50   ~ 0
 RX_IND
 Text Label 2650 9350 3    50   ~ 0
 RTS
-Text Label 8500 5400 0    50   ~ 0
-CTS
-Text Label 8500 5500 0    50   ~ 0
-RST_N
-Text Label 8500 5600 0    50   ~ 0
-RTS
-Text Label 8500 5700 0    50   ~ 0
-RX_IND
 $Comp
 L power:+3.3V #PWR067
 U 1 1 5CC5A952
@@ -2447,4 +2395,52 @@ Wire Wire Line
 	8500 6850 9250 6850
 Wire Wire Line
 	9250 6850 9250 6750
+Text Label 8600 9300 0    50   ~ 0
+RES
+Text Label 8600 9400 0    50   ~ 0
+A0
+Text Label 8500 5900 0    50   ~ 0
+RD
+Text Label 8500 5800 0    50   ~ 0
+WR
+Text Label 8500 5700 0    50   ~ 0
+A0
+Text Label 8500 5600 0    50   ~ 0
+RES
+Text Label 8500 5500 0    50   ~ 0
+CS1
+Text Label 8500 5200 0    50   ~ 0
+VBAT
+Text Label 8500 5400 0    50   ~ 0
+BUTTON1
+Text Label 8500 5300 0    50   ~ 0
+BUTTON2
+Text Label 8500 4100 0    50   ~ 0
+BUTTON3
+Text Label 12600 9050 0    50   ~ 0
+INT_XL
+Text Label 12600 9150 0    50   ~ 0
+DRDY_MAG
+Wire Wire Line
+	12600 9250 13050 9250
+Wire Wire Line
+	12600 9350 13050 9350
+Text Label 12600 9550 0    50   ~ 0
+INT_MAG
+Text Label 8500 6650 0    50   ~ 0
+INT_XL
+Text Label 8500 6550 0    50   ~ 0
+DRDY_MAG
+Text Label 5850 7350 2    50   ~ 0
+INT_MAG
+Text Label 8500 3700 0    50   ~ 0
+RX_IND
+Text Label 8500 3800 0    50   ~ 0
+RTS
+Text Label 8500 3900 0    50   ~ 0
+RST_N
+Text Label 8500 4000 0    50   ~ 0
+CTS
+NoConn ~ 8500 6450
+NoConn ~ 5850 7150
 $EndSCHEMATC
