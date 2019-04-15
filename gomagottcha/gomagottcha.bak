@@ -2443,4 +2443,5 @@ Text Label 8500 4000 0    50   ~ 0
 CTS
 NoConn ~ 8500 6450
 NoConn ~ 5850 7150
+NoConn ~ 8500 6150
 $EndSCHEMATC
